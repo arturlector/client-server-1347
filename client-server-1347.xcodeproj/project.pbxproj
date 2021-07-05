@@ -58,13 +58,29 @@
 			children = (
 				1273D102269377CC003F2E68 /* AppDelegate.swift */,
 				1273D104269377CC003F2E68 /* SceneDelegate.swift */,
-				1273D106269377CC003F2E68 /* ViewController.swift */,
+				1273D11726937AC6003F2E68 /* lesson-1 */,
+				1273D11626937A9C003F2E68 /* Resources */,
+			);
+			path = "client-server-1347";
+			sourceTree = "<group>";
+		};
+		1273D11626937A9C003F2E68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				1273D108269377CC003F2E68 /* Main.storyboard */,
 				1273D10B269377CE003F2E68 /* Assets.xcassets */,
 				1273D10D269377CE003F2E68 /* LaunchScreen.storyboard */,
 				1273D110269377CE003F2E68 /* Info.plist */,
 			);
-			path = "client-server-1347";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1273D11726937AC6003F2E68 /* lesson-1 */ = {
+			isa = PBXGroup;
+			children = (
+				1273D106269377CC003F2E68 /* ViewController.swift */,
+			);
+			path = "lesson-1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +304,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77XX2PXRV7;
-				INFOPLIST_FILE = "client-server-1347/Info.plist";
+				INFOPLIST_FILE = "client-server-1347/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77XX2PXRV7;
-				INFOPLIST_FILE = "client-server-1347/Info.plist";
+				INFOPLIST_FILE = "client-server-1347/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
