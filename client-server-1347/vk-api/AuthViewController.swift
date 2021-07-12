@@ -68,10 +68,16 @@ extension AuthViewController: WKNavigationDelegate {
         
         print(token, userId)
         
-        //Session.shared.token = token
-        //Session.shared.userId = userId
-        //navigationController.push(mainViewController)
+        Session.shared.token = token
+        Session.shared.userId = userId
+        
+        showFriendsVC()
         
         decisionHandler(.cancel)
+    }
+    
+    func showFriendsVC() {
+        
+        performSegue(withIdentifier: "showFriendsSegue", sender: nil)
     }
 }

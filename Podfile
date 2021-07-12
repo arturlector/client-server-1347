@@ -8,5 +8,6 @@ target 'client-server-1347' do
   # Pods for client-server-1347
 
   pod 'Alamofire'
+  pod 'DynamicJSON'
 
 end
