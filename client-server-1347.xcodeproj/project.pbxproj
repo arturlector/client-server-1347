@@ -21,6 +21,11 @@
 		1273D15826977273003F2E68 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D15726977273003F2E68 /* NetworkLogger.swift */; };
 		1273D15A26977AA4003F2E68 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D15926977AA4003F2E68 /* APIService.swift */; };
 		1273D15D26977D1C003F2E68 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D15C26977D1C003F2E68 /* AuthViewController.swift */; };
+		1273D16F269CB4C3003F2E68 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D16E269CB4C3003F2E68 /* FriendsViewController.swift */; };
+		1273D172269CB5E3003F2E68 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D171269CB5E3003F2E68 /* Session.swift */; };
+		1273D174269CB611003F2E68 /* FriendsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D173269CB611003F2E68 /* FriendsAPI.swift */; };
+		1273D177269CB9C6003F2E68 /* Data+PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D176269CB9C6003F2E68 /* Data+PrettyJSON.swift */; };
+		1273D17A269CBD36003F2E68 /* User1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D179269CBD36003F2E68 /* User1.swift */; };
 		9D2C9C3BDBC45385EF436568 /* Pods_client_server_1347.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E1546E2D50E8EC5987BE42 /* Pods_client_server_1347.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +46,11 @@
 		1273D15726977273003F2E68 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		1273D15926977AA4003F2E68 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		1273D15C26977D1C003F2E68 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		1273D16E269CB4C3003F2E68 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		1273D171269CB5E3003F2E68 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		1273D173269CB611003F2E68 /* FriendsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAPI.swift; sourceTree = "<group>"; };
+		1273D176269CB9C6003F2E68 /* Data+PrettyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+PrettyJSON.swift"; sourceTree = "<group>"; };
+		1273D179269CBD36003F2E68 /* User1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User1.swift; sourceTree = "<group>"; };
 		58E1546E2D50E8EC5987BE42 /* Pods_client_server_1347.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_client_server_1347.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7FC1601F03876A9113DA17 /* Pods-client-server-1347.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-client-server-1347.debug.xcconfig"; path = "Target Support Files/Pods-client-server-1347/Pods-client-server-1347.debug.xcconfig"; sourceTree = "<group>"; };
 		E8A19F3CBAFFFD86301BFF24 /* Pods-client-server-1347.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-client-server-1347.release.xcconfig"; path = "Target Support Files/Pods-client-server-1347/Pods-client-server-1347.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,9 +159,38 @@
 		1273D15B26977C31003F2E68 /* vk-api */ = {
 			isa = PBXGroup;
 			children = (
+				1273D175269CB9A5003F2E68 /* Extension */,
+				1273D170269CB5CB003F2E68 /* Service */,
 				1273D15C26977D1C003F2E68 /* AuthViewController.swift */,
+				1273D16E269CB4C3003F2E68 /* FriendsViewController.swift */,
 			);
 			path = "vk-api";
+			sourceTree = "<group>";
+		};
+		1273D170269CB5CB003F2E68 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1273D178269CBD20003F2E68 /* Models */,
+				1273D171269CB5E3003F2E68 /* Session.swift */,
+				1273D173269CB611003F2E68 /* FriendsAPI.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1273D175269CB9A5003F2E68 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1273D176269CB9C6003F2E68 /* Data+PrettyJSON.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1273D178269CBD20003F2E68 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1273D179269CBD36003F2E68 /* User1.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		33D265838A3EF4BE22A171EC /* Frameworks */ = {
@@ -285,12 +324,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1273D177269CB9C6003F2E68 /* Data+PrettyJSON.swift in Sources */,
 				1273D15D26977D1C003F2E68 /* AuthViewController.swift in Sources */,
 				1273D12326938BB2003F2E68 /* FruitListViewController.swift in Sources */,
 				1273D107269377CC003F2E68 /* AccountViewController.swift in Sources */,
 				1273D103269377CC003F2E68 /* AppDelegate.swift in Sources */,
+				1273D16F269CB4C3003F2E68 /* FriendsViewController.swift in Sources */,
+				1273D17A269CBD36003F2E68 /* User1.swift in Sources */,
 				1273D12126938B98003F2E68 /* ChooseFruitViewController.swift in Sources */,
+				1273D174269CB611003F2E68 /* FriendsAPI.swift in Sources */,
 				1273D105269377CC003F2E68 /* SceneDelegate.swift in Sources */,
+				1273D172269CB5E3003F2E68 /* Session.swift in Sources */,
 				1273D11E26938394003F2E68 /* NotificationCenterViewController.swift in Sources */,
 				1273D15A26977AA4003F2E68 /* APIService.swift in Sources */,
 				1273D15826977273003F2E68 /* NetworkLogger.swift in Sources */,
