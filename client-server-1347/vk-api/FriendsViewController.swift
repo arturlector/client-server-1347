@@ -11,14 +11,16 @@ class FriendsViewController: UITableViewController {
 
     let friendsAPI = FriendsAPI()
     
-    var friends: [User3] = []
+    //let friendsDB = FriendsDB()
+    
+    var friends: [UserModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
 
-        friendsAPI.getFriends3  { [weak self] users in
+        friendsAPI.getFriends  { [weak self] users in
             
             guard let self = self else { return }
             
@@ -39,7 +41,7 @@ class FriendsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        let friend: User3 = friends[indexPath.row]
+        let friend: UserModel = friends[indexPath.row]
         
         cell.textLabel?.text = "\(friend.firstName) \(friend.lastName)"
         

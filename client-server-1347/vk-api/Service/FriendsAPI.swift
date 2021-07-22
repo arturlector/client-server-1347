@@ -8,21 +8,23 @@
 import Foundation
 import Alamofire
 import DynamicJSON
+import RealmSwift
 
-struct User3 {
-    
-    var id: Int?
-    var lastName: String?
-    var photo50: String?
-    var firstName: String?
-    var photo100: String?
-    
-    init(json: JSON) {
-        self.id = json.id.int //json["id"] as! Int
-        self.firstName = json.first_name.string //json["first_name"] as! String
-        self.lastName = json.last_name.string //json["last_name"] as! String
-    }
-}
+//@objcMembers
+//class User3: Object {
+//    
+//    dynamic var id: Int = 0
+//    dynamic var lastName: String = ""
+//    dynamic var photo50: String = ""
+//    dynamic var firstName: String = ""
+//    dynamic var photo100: String = ""
+//    
+//    init(json: JSON) {
+//        self.id = json.id.int ?? 0 //json["id"] as! Int
+//        self.firstName = json.first_name.string ?? "" //json["first_name"] as! String
+//        self.lastName = json.last_name.string ?? "" //json["last_name"] as! String
+//    }
+//}
 
 //Ручной парсинг - JSONSerialization
 struct User2 {
@@ -48,6 +50,7 @@ final class FriendsAPI {
     let cliendId = Session.shared.userId
     let version = "5.21"
     
+    /*
     //DynamicJSON
     func getFriends3(completion: @escaping([User3])->()) {
         
@@ -75,7 +78,7 @@ final class FriendsAPI {
             completion(friends)
             
         }
-    }
+    }*/
     
     /*
     //JSONSerialization
@@ -125,9 +128,9 @@ final class FriendsAPI {
     }
  */
     
-    /*
-     Парсинг = Codable + Quicktype
-    func getFriends(completion: @escaping([User1])->()) {
+    
+     //Парсинг = Codable + Quicktype
+    func getFriends(completion: @escaping([UserModel])->()) {
         
         let method = "/friends.get"
         
@@ -168,7 +171,7 @@ final class FriendsAPI {
             
         }
     }
- */
+ 
     
     
 }

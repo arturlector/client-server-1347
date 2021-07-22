@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		120A160E26A9E1E500F4166F /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120A160D26A9E1E500F4166F /* RealmViewController.swift */; };
+		120A161026A9E82D00F4166F /* PersonDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120A160F26A9E82D00F4166F /* PersonDB.swift */; };
 		1273D103269377CC003F2E68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D102269377CC003F2E68 /* AppDelegate.swift */; };
 		1273D105269377CC003F2E68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D104269377CC003F2E68 /* SceneDelegate.swift */; };
 		1273D107269377CC003F2E68 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D106269377CC003F2E68 /* AccountViewController.swift */; };
@@ -25,11 +27,14 @@
 		1273D172269CB5E3003F2E68 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D171269CB5E3003F2E68 /* Session.swift */; };
 		1273D174269CB611003F2E68 /* FriendsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D173269CB611003F2E68 /* FriendsAPI.swift */; };
 		1273D177269CB9C6003F2E68 /* Data+PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D176269CB9C6003F2E68 /* Data+PrettyJSON.swift */; };
-		1273D17A269CBD36003F2E68 /* User1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D179269CBD36003F2E68 /* User1.swift */; };
+		1273D17A269CBD36003F2E68 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D179269CBD36003F2E68 /* UserModel.swift */; };
+		1273D19E26A0A64B003F2E68 /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D19D26A0A64B003F2E68 /* StorageViewController.swift */; };
 		9D2C9C3BDBC45385EF436568 /* Pods_client_server_1347.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E1546E2D50E8EC5987BE42 /* Pods_client_server_1347.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		120A160D26A9E1E500F4166F /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewController.swift; sourceTree = "<group>"; };
+		120A160F26A9E82D00F4166F /* PersonDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDB.swift; sourceTree = "<group>"; };
 		1273D0FF269377CC003F2E68 /* client-server-1347.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "client-server-1347.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1273D102269377CC003F2E68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1273D104269377CC003F2E68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +55,8 @@
 		1273D171269CB5E3003F2E68 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		1273D173269CB611003F2E68 /* FriendsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAPI.swift; sourceTree = "<group>"; };
 		1273D176269CB9C6003F2E68 /* Data+PrettyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+PrettyJSON.swift"; sourceTree = "<group>"; };
-		1273D179269CBD36003F2E68 /* User1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User1.swift; sourceTree = "<group>"; };
+		1273D179269CBD36003F2E68 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		1273D19D26A0A64B003F2E68 /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
 		58E1546E2D50E8EC5987BE42 /* Pods_client_server_1347.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_client_server_1347.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7FC1601F03876A9113DA17 /* Pods-client-server-1347.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-client-server-1347.debug.xcconfig"; path = "Target Support Files/Pods-client-server-1347/Pods-client-server-1347.debug.xcconfig"; sourceTree = "<group>"; };
 		E8A19F3CBAFFFD86301BFF24 /* Pods-client-server-1347.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-client-server-1347.release.xcconfig"; path = "Target Support Files/Pods-client-server-1347/Pods-client-server-1347.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +74,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		120A160C26A9E1CE00F4166F /* lesson-6 */ = {
+			isa = PBXGroup;
+			children = (
+				120A160D26A9E1E500F4166F /* RealmViewController.swift */,
+				120A160F26A9E82D00F4166F /* PersonDB.swift */,
+			);
+			path = "lesson-6";
+			sourceTree = "<group>";
+		};
 		1273D0F6269377CC003F2E68 = {
 			isa = PBXGroup;
 			children = (
@@ -89,9 +104,11 @@
 		1273D101269377CC003F2E68 /* client-server-1347 */ = {
 			isa = PBXGroup;
 			children = (
+				1273D15B26977C31003F2E68 /* vk-api */,
 				1273D102269377CC003F2E68 /* AppDelegate.swift */,
 				1273D104269377CC003F2E68 /* SceneDelegate.swift */,
-				1273D15B26977C31003F2E68 /* vk-api */,
+				120A160C26A9E1CE00F4166F /* lesson-6 */,
+				1273D19C26A0A618003F2E68 /* lesson-4 */,
 				1273D15426976C12003F2E68 /* lesson-2 */,
 				1273D11726937AC6003F2E68 /* lesson-1 */,
 				1273D11626937A9C003F2E68 /* Resources */,
@@ -188,9 +205,17 @@
 		1273D178269CBD20003F2E68 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1273D179269CBD36003F2E68 /* User1.swift */,
+				1273D179269CBD36003F2E68 /* UserModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1273D19C26A0A618003F2E68 /* lesson-4 */ = {
+			isa = PBXGroup;
+			children = (
+				1273D19D26A0A64B003F2E68 /* StorageViewController.swift */,
+			);
+			path = "lesson-4";
 			sourceTree = "<group>";
 		};
 		33D265838A3EF4BE22A171EC /* Frameworks */ = {
@@ -330,11 +355,14 @@
 				1273D107269377CC003F2E68 /* AccountViewController.swift in Sources */,
 				1273D103269377CC003F2E68 /* AppDelegate.swift in Sources */,
 				1273D16F269CB4C3003F2E68 /* FriendsViewController.swift in Sources */,
-				1273D17A269CBD36003F2E68 /* User1.swift in Sources */,
+				120A160E26A9E1E500F4166F /* RealmViewController.swift in Sources */,
+				1273D17A269CBD36003F2E68 /* UserModel.swift in Sources */,
 				1273D12126938B98003F2E68 /* ChooseFruitViewController.swift in Sources */,
 				1273D174269CB611003F2E68 /* FriendsAPI.swift in Sources */,
 				1273D105269377CC003F2E68 /* SceneDelegate.swift in Sources */,
 				1273D172269CB5E3003F2E68 /* Session.swift in Sources */,
+				1273D19E26A0A64B003F2E68 /* StorageViewController.swift in Sources */,
+				120A161026A9E82D00F4166F /* PersonDB.swift in Sources */,
 				1273D11E26938394003F2E68 /* NotificationCenterViewController.swift in Sources */,
 				1273D15A26977AA4003F2E68 /* APIService.swift in Sources */,
 				1273D15826977273003F2E68 /* NetworkLogger.swift in Sources */,

@@ -7,6 +7,7 @@
 
 import UIKit
 import WebKit
+import SwiftKeychainWrapper
 
 class AuthViewController: UIViewController  {
 
@@ -19,6 +20,16 @@ class AuthViewController: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let token = KeychainWrapper.standard.string(forKey: "access_token"),
+           let userId = KeychainWrapper.standard.string(forKey: "user_id") {
+            
+            Session.shared.token = token
+            Session.shared.userId = userId
+            showFriendsVC()
+            
+            return
+        }
+        
         authorizeToVK()
     }
     
@@ -67,6 +78,9 @@ extension AuthViewController: WKNavigationDelegate {
         guard let token = params["access_token"], let userId = params["user_id"] else { return }
         
         print(token, userId)
+        
+        KeychainWrapper.standard.set(token, forKey: "access_token")
+        KeychainWrapper.standard.set(userId, forKey: "user_id")
         
         Session.shared.token = token
         Session.shared.userId = userId
