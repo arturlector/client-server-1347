@@ -259,20 +259,40 @@
             </objects>
             <point key="canvasLocation" x="1978" y="-1327"/>
         </scene>
-        <!--Realm View Controller-->
+        <!--Object Notify View Controller-->
         <scene sceneID="tu9-ta-0t3">
             <objects>
-                <viewController id="D6Y-DU-U0c" customClass="RealmViewController" customModule="client_server_1347" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="D6Y-DU-U0c" customClass="ObjectNotifyViewController" customModule="client_server_1347" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mZg-Ef-yK8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXh-ks-18R">
+                                <rect key="frame" x="101" y="111" width="244" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eh-4Z-6cK">
+                                <rect key="frame" x="91" y="264" width="207" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Step Up"/>
+                                <connections>
+                                    <action selector="stepUpAction:" destination="D6Y-DU-U0c" eventType="touchUpInside" id="7Wj-Dc-hpq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="5AP-EX-s4L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="stepLabel" destination="yXh-ks-18R" id="oid-2k-UNN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpP-eY-Ew2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-580" y="-1138"/>
+            <point key="canvasLocation" x="-617.39130434782612" y="-1298.4375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UuT-YY-hss">

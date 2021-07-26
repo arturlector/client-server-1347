@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		120A160E26A9E1E500F4166F /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120A160D26A9E1E500F4166F /* RealmViewController.swift */; };
 		120A161026A9E82D00F4166F /* PersonDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120A160F26A9E82D00F4166F /* PersonDB.swift */; };
+		1251B30F26AF25FF0028AC5A /* CollectionsNotifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1251B30E26AF25FF0028AC5A /* CollectionsNotifyViewController.swift */; };
+		1251B31126AF2BF10028AC5A /* ObjectNotifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1251B31026AF2BF10028AC5A /* ObjectNotifyViewController.swift */; };
 		1273D103269377CC003F2E68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D102269377CC003F2E68 /* AppDelegate.swift */; };
 		1273D105269377CC003F2E68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D104269377CC003F2E68 /* SceneDelegate.swift */; };
 		1273D107269377CC003F2E68 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1273D106269377CC003F2E68 /* AccountViewController.swift */; };
@@ -35,6 +37,8 @@
 /* Begin PBXFileReference section */
 		120A160D26A9E1E500F4166F /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewController.swift; sourceTree = "<group>"; };
 		120A160F26A9E82D00F4166F /* PersonDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDB.swift; sourceTree = "<group>"; };
+		1251B30E26AF25FF0028AC5A /* CollectionsNotifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsNotifyViewController.swift; sourceTree = "<group>"; };
+		1251B31026AF2BF10028AC5A /* ObjectNotifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectNotifyViewController.swift; sourceTree = "<group>"; };
 		1273D0FF269377CC003F2E68 /* client-server-1347.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "client-server-1347.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1273D102269377CC003F2E68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1273D104269377CC003F2E68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,15 @@
 			path = "lesson-6";
 			sourceTree = "<group>";
 		};
+		1251B30D26AF25860028AC5A /* lesson-7 */ = {
+			isa = PBXGroup;
+			children = (
+				1251B30E26AF25FF0028AC5A /* CollectionsNotifyViewController.swift */,
+				1251B31026AF2BF10028AC5A /* ObjectNotifyViewController.swift */,
+			);
+			path = "lesson-7";
+			sourceTree = "<group>";
+		};
 		1273D0F6269377CC003F2E68 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +120,7 @@
 				1273D15B26977C31003F2E68 /* vk-api */,
 				1273D102269377CC003F2E68 /* AppDelegate.swift */,
 				1273D104269377CC003F2E68 /* SceneDelegate.swift */,
+				1251B30D26AF25860028AC5A /* lesson-7 */,
 				120A160C26A9E1CE00F4166F /* lesson-6 */,
 				1273D19C26A0A618003F2E68 /* lesson-4 */,
 				1273D15426976C12003F2E68 /* lesson-2 */,
@@ -352,6 +366,7 @@
 				1273D177269CB9C6003F2E68 /* Data+PrettyJSON.swift in Sources */,
 				1273D15D26977D1C003F2E68 /* AuthViewController.swift in Sources */,
 				1273D12326938BB2003F2E68 /* FruitListViewController.swift in Sources */,
+				1251B30F26AF25FF0028AC5A /* CollectionsNotifyViewController.swift in Sources */,
 				1273D107269377CC003F2E68 /* AccountViewController.swift in Sources */,
 				1273D103269377CC003F2E68 /* AppDelegate.swift in Sources */,
 				1273D16F269CB4C3003F2E68 /* FriendsViewController.swift in Sources */,
@@ -366,6 +381,7 @@
 				1273D11E26938394003F2E68 /* NotificationCenterViewController.swift in Sources */,
 				1273D15A26977AA4003F2E68 /* APIService.swift in Sources */,
 				1273D15826977273003F2E68 /* NetworkLogger.swift in Sources */,
+				1251B31126AF2BF10028AC5A /* ObjectNotifyViewController.swift in Sources */,
 				1273D153269769B1003F2E68 /* DetailViewController.swift in Sources */,
 				1273D15626976C36003F2E68 /* NetworkViewController.swift in Sources */,
 			);
